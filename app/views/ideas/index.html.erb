@@ -5,7 +5,7 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th>Stars</th>
+      <!-- <th>Stars</th> -->
       <th>Picture</th>
       <th></th>
       <th></th>
@@ -18,11 +18,17 @@
       <tr>
         <td><%= idea.name %></td>
         <td><%= idea.description %></td>
+
+        <!--
         <td>
+          <% if false %>
           <% ( idea.stars || 0 ).times do %>
             <%= fa_icon "star" %>
           <% end %>
+          <% end %>
         </td>
+        -->
+
         <td><%= idea.picture %></td>
         <td><%= link_to 'Show', idea %></td>
         <td><%= link_to 'Edit', edit_idea_path(idea) %></td>

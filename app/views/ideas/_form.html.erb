@@ -19,10 +19,14 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
+
+  <% if false %>
   <div class="field">
     <%= f.label :stars %><br>
     <%= select( :idea, :stars, options_for_select( [[1,1], [2,2], [3,3]], @idea.stars ) ) %>
   </div>
+  <% end %>
+
   <div class="field">
     <%= f.label :picture %><br>
     <%= f.file_field :picture %>

@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20140307112711) do
     t.string   "picture"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "stars"
   end
 
 end
